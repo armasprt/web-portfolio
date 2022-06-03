@@ -1,0 +1,288 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'inter', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+.banner-wrapper {
+    width: 100%;
+    height: 700px;
+    background-image: linear-gradient(to bottom right, rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.5)), url('../img/the-coherent-team-9AdfBC1XC4U-unsplash.jpg');
+    background-size: cover;
+}
+
+.navigation {
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.navigation li {
+    display: inline;
+    line-height: 70px;
+    padding: 20px;
+}
+
+.navigation li a {
+    color: white;
+    letter-spacing: 1px;
+    transition: all 0.5s;
+    font-weight: 200;
+}
+
+.navigation li a:hover {
+    color: rgb(70, 216, 253);
+    font-weight: 700;
+    padding: 10px;
+}
+
+.header-banner {
+    text-align: center;
+    padding-top: 200px;
+}
+
+.header-banner h1 {
+    color: white;
+    letter-spacing: 3px;
+    font-size: 42px;
+    opacity: 0.9;
+    margin-bottom: 10px;
+}
+
+.header-banner p {
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 200;
+    opacity: 0.8;
+    margin-bottom: 70px;
+}
+
+.btn {
+    padding: 15px 25px;
+    background-color: rgb(70, 216, 253);
+    margin-left: 20px;
+    transition: all 0.5s;
+}
+
+.btn:hover {
+    padding: 15px 35px;
+    font-weight: 700;
+}
+
+.header-banner a {
+    color: black;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.heading {
+    font-size: 24px;
+    font-weight: normal;
+    display: inline-block;
+    border-bottom: 3px solid rgb(70, 216, 253);
+    margin-top: 50px;
+    margin-bottom: 70px;
+    padding-bottom: 5px;
+}
+
+.about-wrapper {
+    text-align: center;
+    margin-bottom: 50px;
+    color: rgb(27, 26, 26);
+}
+
+.about-container {
+    width: 100%;
+    display: inline-block;
+}
+
+.about-left {
+    width: 50%;
+    float: left;
+}
+
+.about-left img {
+    width: 300px;
+}
+
+.about-right {
+    float: right;
+    width: 50%;
+    text-align: left;
+}
+
+.about-right h3 {
+    margin-bottom: 10px;
+    font-size: 21px;
+    font-weight: 400;
+}
+
+.about-right h4 {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.about-right p {
+    width: 500px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.portfolio-wrapper {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.portfolio-container {
+    width: 100%;
+    display: inline-block;
+    padding: 0px 100px;
+}
+
+.portfolio-card {
+    float: left;
+    width: 31.5%;
+    height: 400px;
+    margin: 10px;
+    transition: all 0.5s;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
+    color: rgb(27, 26, 26);
+}
+
+.portfolio-card img {
+    width: 300px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.head-port {
+    font-size: 24px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.text-port {
+    font-size: 16px;
+    letter-spacing: 1px;
+    width: 270px;
+    margin: 0 auto;
+}
+
+.portfolio-container a {
+    color: black;
+}
+
+.portfolio-card:hover {
+    box-shadow: 1px 1px 20px rgb(70, 216, 253);
+    margin: 5px;
+    width: 32.5%;
+}
+
+.contact-wrapper {
+    text-align: center;
+    background-color: rgb(27, 26, 26);
+    color: white;
+}
+
+.contact span {
+    font-size: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 15px;
+    transition: all 0.4s;
+    padding-top: 20px;
+}
+
+.contact a {
+    color: white;
+}
+
+.contact span:hover {
+    font-size: 38px;
+    color: rgb(70, 216, 253);
+}
+
+.contact-wrapper p {
+    padding-bottom: 10px;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+@media (max-width: 1024px) {
+    .portfolio-card {
+        width: 47%;
+    }
+
+    .portfolio-card img {
+        width: 100%;
+    }
+
+    .portfolio-card p {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .portfolio-card:hover {
+        width: 100%;
+        margin: 10;
+    }
+}
+
+@media (max-width: 678px) {
+    .navgation li a {
+        font-size: 18px;
+    }
+
+    .header-banner h1 {
+        font-size: 32px;
+    }
+
+    .header-banner p {
+        font-size: 14px;
+    }
+
+    .about-left {
+        width: 100%;
+    }
+
+    .about-right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-right h3 {
+        margin-top: 25px;
+    }
+
+    .about-right p {
+        font-size: 14px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .portfolio-card {
+        width: 100%;
+    }
+
+    .portfolio-card img {
+        width: 100%;
+    }
+
+    .portfolio-card p {
+        font-size: 14px;
+        width: 100%;
+        line-height: 20px;
+    }
+
+    .portfolio-card:hover {
+        width: 100%;
+        margin: 10;
+    }
+}
+
